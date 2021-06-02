@@ -1,23 +1,11 @@
-import logo from './logo.svg';
 import './App.css';
+import PdfViewer from './pdf-viewer/PdfViewer';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <PdfViewer file="/assets/files/teste.pdf" />
+      {/* <PdfViewer file="https%3A%2F%2Fassets-tim-dev.s3-accelerate.amazonaws.com%2F5ffc9e77b2f33d29292eb6d2_60b10e70e023e744c3c42910_1622216330659.pdf%3FAWSAccessKeyId%3DAKIAQERCLHUPFZXND7IV%26Expires%3D1622558782%26Signature%3Dmggr1BiY99yriO29POR6HPuBdaU%253Dpdf" /> */}
     </div>
   );
 }
